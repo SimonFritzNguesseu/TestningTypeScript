@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+      "target": "es2016",
+      "module": "commonjs",
+      "esModuleInterop": true,
+      "forceConsistentCasingInFileNames": true,
+      "strict": true,
+      "skipLibCheck": true,
+      "outDir": "./dist", // Specificerar en katalog för kompilerade filer
+      "baseUrl": ".",    // Ange en bas-URL för modulupplösning
+      "paths": {
+        "*": ["node_modules/*"] // Lägg till sökvägar för modulupplösning
+      }
+    },
+    "include": [
+      "tests/**/*.ts" // Inkludera alla TypeScript-filer i 'tests'-mappen och dess undermappar
+    ],
+    "exclude": [
+      "node_modules" // Exkludera 'node_modules'-mappen från kompilering
+    ]
+  }
